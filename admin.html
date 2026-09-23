@@ -820,7 +820,7 @@
     </section>
 
     <section id="tab-retention" class="tab-page" style="display: none;">
-      <h2 class="section-title">保存期間</h2>
+      <h2 class="section-title">保存期間（未入力の場合は全て12ヶ月です）</h2>
 
       <div id="retention-loading" class="settings-loading">読み込み中...</div>
       <div id="retention-error" class="report-error" style="display: none;"></div>
@@ -829,41 +829,41 @@
       <form id="retention-form" style="display: none;">
 
         <div class="settings-card">
-          <h3 class="settings-card-title">予約履歴の保持期間</h3>
+          <h3 class="settings-card-title">予約履歴の保存期間</h3>
           <div class="form-group">
-            <p class="settings-card-note">何ヶ月分の予約履歴をデータで残すか（未入力の場合は12ヶ月）</p>
+            <p class="settings-card-note">何ヶ月分の予約履歴をデータとして残すかを設定します。</p>
             <input type="number" id="ret-history-retention" min="1" placeholder="12">
           </div>
         </div>
 
         <div class="settings-card">
-          <h3 class="settings-card-title">キャンセル履歴の保持期間</h3>
+          <h3 class="settings-card-title">キャンセル履歴の保存期間</h3>
           <div class="form-group">
-            <p class="settings-card-note">誰が・いつ・何をキャンセルしたかの記録を、何ヶ月分残すか（未入力の場合は12ヶ月）</p>
+            <p class="settings-card-note">誰が・いつ・何をキャンセルしたかの記録を、何ヶ月分残すかを設定します。</p>
             <input type="number" id="ret-cancel-history-retention" min="1" placeholder="12">
           </div>
         </div>
 
         <div class="settings-card">
-          <h3 class="settings-card-title">キャンセル待ちの保持期間</h3>
+          <h3 class="settings-card-title">キャンセル待ちの保存期間</h3>
           <div class="form-group">
-            <p class="settings-card-note">登録日時から数えて、キャンセル待ちのデータを何ヶ月分残すか（未入力の場合は12ヶ月）</p>
+            <p class="settings-card-note">登録日時から、キャンセル待ちのデータを何ヶ月分残すかを設定します。</p>
             <input type="number" id="ret-waitlist-retention" min="1" placeholder="12">
           </div>
         </div>
 
         <div class="settings-card">
-          <h3 class="settings-card-title">カレンダー変更履歴の保持期間</h3>
+          <h3 class="settings-card-title">カレンダー変更履歴の保存期間</h3>
           <div class="form-group">
-            <p class="settings-card-note">Googleカレンダー上での直接編集の記録を、何ヶ月分残すか（未入力の場合は12ヶ月）</p>
+            <p class="settings-card-note">Googleカレンダー上での直接編集の記録を、何ヶ月分残すかを設定します。</p>
             <input type="number" id="ret-calendar-history-retention" min="1" placeholder="12">
           </div>
         </div>
 
         <div class="settings-card">
-          <h3 class="settings-card-title">設定変更履歴の保持期間</h3>
+          <h3 class="settings-card-title">設定変更履歴の保存期間</h3>
           <div class="form-group">
-            <p class="settings-card-note">管理画面から「誰が・いつ・何を変更したか」の記録を、何ヶ月分残すか（未入力の場合は12ヶ月）</p>
+            <p class="settings-card-note">管理画面から「誰が・いつ・何を変更したか」の記録を、何ヶ月分残すかを設定します。</p>
             <input type="number" id="ret-settings-history-retention" min="1" placeholder="12">
           </div>
         </div>
