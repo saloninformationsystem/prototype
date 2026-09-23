@@ -296,7 +296,7 @@
 
         <div class="settings-card">
           <h3 class="settings-card-title">メニュー・料金</h3>
-          <p class="settings-card-note">「～」にチェックを入れると、そのメニューの施術時間・料金の後ろに「～」が付いて表示されます（例：カット　60分～　￥5,000～）。お客様やお髪の状態によって前後する場合にご利用ください。</p>
+          <p class="settings-card-note">「～」にチェックを入れると、施術時間・料金に「～」を付けて表示します（例：カット　60分～　￥5,000～）。お客様や髪の状態によって、施術時間・料金が前後する場合にご利用ください。</p>
           <div class="menu-master-header">
             <span class="col-name">メニュー</span>
             <span class="col-minutes">施術時間</span>
@@ -319,9 +319,9 @@
             <label><input type="checkbox" id="s5-show-menu-total"> 選んだメニューの合計金額と合計施術時間を表示する</label>
           </div>
           <div class="form-group">
-            <label for="s5-menu-note-text">施術メニューの下に表示する説明文（任意・空欄で非表示）</label>
-            <p class="settings-card-note">例：施術時間と金額は目安であり確定ではありません。施術内容によって金額と施術時間が前後します。</p>
-            <textarea id="s5-menu-note-text" rows="3" placeholder="施術時間と金額は目安であり確定ではありません。施術内容によって金額と施術時間が前後します。"></textarea>
+            <label for="s5-menu-note-text">施術メニューの下に表示する説明文（空欄で非表示）</label>
+            <p class="settings-card-note">例：施術時間・料金は目安となります。髪の状態や施術内容などにより、実際の施術時間・料金が前後する場合がございます。</p>
+            <textarea id="s5-menu-note-text" rows="3" placeholder="施術時間・料金は目安となります。髪の状態や施術内容などにより、実際の施術時間・料金が前後する場合がございます。"></textarea>
             <button type="button" id="btn-menu-note-i18n-toggle" class="btn-i18n-toggle">🌐 多言語対応サイト向けの翻訳を編集</button>
             <div id="menu-note-i18n-panel" class="menu-i18n-panel" style="display: none;">
               <p class="i18n-panel-note">未入力の言語は、日本語の説明文がそのまま表示されます</p>
@@ -361,8 +361,8 @@
             <label><input type="checkbox" id="s5-waitlist-enabled"> キャンセル待ち機能を使う</label>
           </div>
           <div class="form-group">
-            <label for="s5-waitlist-interval">次の対象者へ案内を回すまでの待ち時間（分）</label>
-            <p class="settings-card-note">空欄：空きが出た時、対象者（施術時間的にその枠に入れる人）全員に同時に通知する（早い者勝ち）。数値を入れると、登録順に1人ずつ通知し、その分数だけ反応がなければ自動的に次の対象者へ回す。</p>
+            <label for="s5-waitlist-interval">キャンセル待ちの案内時間（分）</label>
+            <p class="settings-card-note">空欄の場合は、対象者全員に同時に通知します（早い者勝ち）。数値を設定すると、登録順に1人ずつ通知し、設定した時間内に反応がなければ次の対象者へ通知します。</p>
             <input type="number" id="s5-waitlist-interval" min="1" placeholder="空欄でOK">
           </div>
           <div class="form-group">
