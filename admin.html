@@ -200,7 +200,7 @@
 
       <div class="settings-card">
         <h3 class="settings-card-title">セットアップウィザード</h3>
-        <p class="settings-card-note">店舗名・営業時間・スタッフ・メニューを、質問に答えるだけでまとめて設定できます。最初に案内される画面ですが、いつでも開き直せます。</p>
+        <p class="settings-card-note">店舗名・営業時間・スタッフ・メニューを、質問に答えながらまとめて設定できます。初回に案内されますが、いつでも開き直せます。</p>
         <button type="button" id="open-wizard-btn" class="btn-add-row">セットアップウィザードを開く</button>
       </div>
 
@@ -229,7 +229,7 @@
         <div class="settings-card">
           <h3 class="settings-card-title">新規予約の最短受付タイミング</h3>
           <div class="form-group">
-            <p class="settings-card-note">今から何分後以降の枠なら予約できるか</p>
+            <p class="settings-card-note">今から何分後以降の予約を受け付けるかを設定します。</p>
             <input type="number" id="s1-buffer-minutes" min="0">
           </div>
         </div>
@@ -237,7 +237,7 @@
         <div class="settings-card">
           <h3 class="settings-card-title">表示する日数</h3>
           <div class="form-group">
-            <p class="settings-card-note">お客様のタイムテーブルに、一度に何日分の空き状況を表示するかです。「1週間分」に設定すると、7日分まとめて確認しながら選べます。</p>
+            <p class="settings-card-note">お客様のタイムテーブルに、一度に何日分の空き状況を表示するかを設定します。</p>
             <select id="s1-display-days">
               <option value="1">1日分</option>
               <option value="3">3日分</option>
@@ -272,7 +272,7 @@
 
         <div class="settings-card">
           <h3 class="settings-card-title">Googleカレンダーの直接編集の検知</h3>
-          <p class="settings-card-note">Googleカレンダー上で予約をドラッグ移動するなど、直接編集した内容を自動検知してスプレッドシートに反映する機能です（1時間ごとに巡回チェックします）。</p>
+          <p class="settings-card-note">Googleカレンダーを直接編集した内容を自動検知し、スプレッドシートに反映します。1時間ごとにチェックします。</p>
           <div class="form-group checkbox-group">
             <label><input type="checkbox" id="s1-calendar-sync-enabled"> 直接編集の検知を使う</label>
           </div>
