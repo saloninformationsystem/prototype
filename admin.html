@@ -499,9 +499,9 @@
         </div>
 
         <div class="settings-card">
-          <h3 class="settings-card-title">予約サイト自体のURL</h3>
+          <h3 class="settings-card-title">予約サイトURL</h3>
           <div class="form-group">
-            <p class="settings-card-note">キャンセル待ちの「空きが出ました」メールなど、お客様に予約サイトへのリンクを送る際に使うURLです（例：https://simozuru.github.io/sis/）。「レイアウト」タブの「トップページに戻るボタン」（サロンの公式ホームページ等に戻るためのボタン）とは別の設定です。</p>
+            <p class="settings-card-note">お客様が予約するときに開く、予約サイトのURLを入力してください。キャンセル待ちの「空きが出ました」メールなどで、予約サイトへのリンクとして使用します。</p>
             <input type="text" id="s2-reservation-site-url" placeholder="https://example.github.io/sis/">
           </div>
         </div>
@@ -516,14 +516,14 @@
         <div class="settings-card">
           <h3 class="settings-card-title">サロン名（Googleカレンダー・メール件名で使用）</h3>
           <div class="form-group">
-            <p class="settings-card-note">お客様がGoogleカレンダーに追加した際の予定名（例：カット（○○サロン））と、予約確定・仮予約メールの件名（例：【○○サロン、ご予約を承りました】）に使われます。未入力の場合は、それぞれ「サロン予約」「当サロン」と表示されます。</p>
+            <p class="settings-card-note">Googleカレンダーの予定名や、予約確定・仮予約メールの件名に使用するサロン名を入力してください。未入力の場合は「サロン予約」「当サロン」と表示されます。</p>
             <input type="text" id="s2-calendar-salon-name" placeholder="例：○○サロン">
           </div>
         </div>
 
         <div class="settings-card">
           <h3 class="settings-card-title">予約確定メール：ヘッダー・フッター文言</h3>
-          <p class="settings-card-note">「ご予約内容」の部分（日時・メニューなど）は固定表示で、編集できません。</p>
+          <p class="settings-card-note">「ご予約内容」の部分（日時・メニューなど）は固定表示のため、編集できません。</p>
           <div class="form-group">
             <label for="s2-mail-header">ヘッダー（本文の冒頭に入る文章）</label>
             <textarea id="s2-mail-header" rows="4" placeholder="この度はご予約いただきありがとうございます。"></textarea>
@@ -536,13 +536,13 @@
 
         <div class="settings-card">
           <h3 class="settings-card-title">来店後のお礼メール（口コミ・クチコミ導線）</h3>
-          <p class="settings-card-note">任意で来店日から指定した日数後に、お客様へお礼メールを自動送信します。Googleクチコミ投稿ページのURLを記載する事で口コミへのご案内ができます。</p>
+          <p class="settings-card-note">来店日から指定した日数後に、お客様へお礼メールを自動送信できます。Googleクチコミ投稿ページのURLを設定すると、口コミをご案内できます。</p>
           <div class="form-group checkbox-group">
             <label><input type="checkbox" id="s2-thankyou-enabled"> 来店後のお礼メールを送る</label>
           </div>
           <div class="form-group">
             <label for="s2-thankyou-days">来店日から何日後に送るか</label>
-            <p class="settings-card-note">0を入力すると、来店当日に送信します。</p>
+            <p class="settings-card-note">0を入力すると、来店日の夜に送信します。</p>
             <input type="number" id="s2-thankyou-days" min="0" placeholder="例：1">
           </div>
           <div class="form-group">
