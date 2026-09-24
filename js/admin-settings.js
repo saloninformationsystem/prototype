@@ -280,7 +280,6 @@ function renderBusinessHoursRows(business, lastOrderOverride) {
         ${buildTimeSelectHtml('business-open-select', openTime, false)}
         <span class="time-sep">〜</span>
         ${buildTimeSelectHtml('business-close-select', closeTime, false)}
-        <span class="time-sep">（両方未選択で休み）</span>
       </div>
       <div class="last-order-row" data-day="${dayIndex}">
         <label><input type="checkbox" class="last-order-check" ${hasOverride ? 'checked' : ''}> 最終受付制を設定する</label>
